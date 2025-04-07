@@ -1,3 +1,25 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es6"],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "jsx": "react-native",
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@features/*": ["features/*"],
+      "@service/*": ["service/*"],
+      "@styles/*": ["styles/*"],
+      "@navigation/*": ["navigation/*"],
+      "@components/*": ["components/*"],
+      "@state/*": ["state/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
 }

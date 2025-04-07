@@ -1,21 +1,25 @@
 buildscript {
     ext {
-        buildToolsVersion = "34.0.0"
+        buildToolsVersion = "34.0.0" // Ensure you have this version installed in SDK Manager
         minSdkVersion = 23
         compileSdkVersion = 34
         targetSdkVersion = 34
-        ndkVersion = "26.1.10909125"
-        kotlinVersion = "1.9.24"
+        ndkVersion = "26.1.10909125" // Ensure NDK version matches your local SDK setup
+        kotlinVersion = "1.9.24" // Compatible Kotlin version
     }
     repositories {
+         mavenCentral()
         google()
-        mavenCentral()
+       
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
+        classpath("com.android.tools.build:gradle:8.5.0") // Ensure the version matches your setup
         classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion") // Use kotlinVersion variable
+        
     }
 }
 
+// Apply React Native plugin
 apply plugin: "com.facebook.react.rootproject"

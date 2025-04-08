@@ -1,6 +1,6 @@
 # 🛒 GrocyGo – Blinkit-style Grocery App
 
-A full-stack grocery delivery mobile app inspired by Blinkit, built with **React Native CLI**, **Fastify**, **Zustand**, **WebSockets**, and **Google Maps**. GrocyGo offers both **customer** and **delivery** portals along with an **admin panel**, delivering a real-time, modern experience.
+A full-stack grocery delivery mobile app inspired by Blinkit, built with **React Native CLI**, **Fastify**, **Zustand**, **WebSockets**, **MongoDB**, and **Google Maps**. GrocyGo offers both **customer** and **delivery** portals along with an **admin panel**, delivering a real-time, modern experience.
 
 ---
 
@@ -18,8 +18,8 @@ A full-stack grocery delivery mobile app inspired by Blinkit, built with **React
   - Clean and responsive design with intuitive UX
 - 🧠 **Zustand for State Management**
   - Lightweight, efficient state handling across the app
-- 🛠️ **Fastify Backend**
-  - High-performance, low-overhead backend API
+- 🛠️ **Fastify Backend + MongoDB**
+  - High-performance API with persistent data storage
 
 ---
 
@@ -27,6 +27,7 @@ A full-stack grocery delivery mobile app inspired by Blinkit, built with **React
 
 - **Frontend**: React Native CLI, Zustand
 - **Backend**: Node.js, Fastify, WebSocket
+- **Database**: MongoDB (with Mongoose or native driver)
 - **Authentication**: JWT
 - **Maps**: Google Maps API
 
@@ -45,6 +46,7 @@ A full-stack grocery delivery mobile app inspired by Blinkit, built with **React
 - Node.js
 - Android Studio with emulator or real device
 - Google Maps API key
+- MongoDB (local or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
 
 ### Steps
 
